@@ -1,13 +1,10 @@
-/*
-Name: Heba Sajid
-ID: 301244428
-Date: September 27th 2022
-*/
-(function(){
+(function()
+{
 
     function Start()
     {
-        console.log("App started!");
+        console.log("App Started!");
     }
+
     window.addEventListener('load', Start);
-}) ();
+})();
