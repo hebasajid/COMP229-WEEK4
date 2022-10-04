@@ -16,7 +16,7 @@ router.post('/login', ProcessLoginPage);
 // Display Registration Page
 router.get('/register', DisplayRegisterPage);
 // Process Registration page
-router.post('/regiser', ProcessRegisterPage);
+router.post('/register', ProcessRegisterPage);
 
 // Process Logout Page
 router.get('/logout', ProcessLogoutPage);
