@@ -15,7 +15,7 @@ export function DisplayLoginPage(req, res, next){
         return res.render('index', {title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req) });
     }
 
-    return res.redirect('/movie-list'); //redirecting back to movei list
+    return res.redirect('/contact-list'); //redirecting back to movei list
 }
 
 export function DisplayRegisterPage(req, res, next){
@@ -23,7 +23,7 @@ export function DisplayRegisterPage(req, res, next){
         return res.render('index', {title: 'Register', page: 'register', messages: req.flash('registerMessage'), displayName: UserDisplayName(req)});
     }
 
-    return res.redirect('/movie-list');
+    return res.redirect('/contact-list');
 }
 
 // Processing Function
