@@ -39,7 +39,7 @@ export function ProcessContactsAddPage(req, res, next){
 export function DisplayContactsEditPage(req, res, next){
     let id = req.params.id;
 
-    contactModel.findById(id, (err, movie) => {
+    contactModel.findById(id, (err, contact) => {
         if(err){
             console.error(err);
             res.end(err);
@@ -57,7 +57,7 @@ export function ProcessContactsEditPage(req, res, next){
         _id: req.body.id,
         name: req.body.name,
         number: req.body.number,
-        email: req.body.email
+        email: req.body.email,
         
     });
 

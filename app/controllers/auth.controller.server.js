@@ -11,11 +11,11 @@ import { UserDisplayName } from '../utils/index.js';
 
 // Display Functions
 export function DisplayLoginPage(req, res, next){
-    if(!req.user){ //checking if we have a request
+    if(!req.user){
         return res.render('index', {title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req) });
     }
 
-    return res.redirect('/contact-list'); //redirecting back to movei list
+    return res.redirect('/contact-list');
 }
 
 export function DisplayRegisterPage(req, res, next){
