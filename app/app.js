@@ -37,6 +37,7 @@ import { MongoURI, Secret } from '../config/config.js';
 import indexRouter from './routes/index.route.server.js'
 import movieRouter from './routes/movies.route.server.js';
 import authRouter from './routes/auth.route.server.js';
+import contactRouter from './routes/contacts.route.server.js';
 
 // Import API Routes
 import authApiRouter from './routes/api/auth-api.route.server.js';
@@ -111,6 +112,7 @@ passport.use(strategy);
 app.use('/', indexRouter);
 app.use('/', movieRouter);
 app.use('/', authRouter);
+app.use('/', contactRouter);
 app.use('/api/auth', authApiRouter);
 
 

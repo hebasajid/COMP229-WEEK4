@@ -69,7 +69,7 @@ export function ProcessMoviesEditPage(req, res, next){
             res.end(err);
         };
 
-        res.redirect('/movie-list')
+        res.redirect('/movie-list');
     } )
 }
 

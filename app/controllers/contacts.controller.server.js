@@ -26,7 +26,7 @@ export function ProcessContactsAddPage(req, res, next){
         
     });
 
-    contactModel.create(newContact, (err, Movie) => {
+    contactModel.create(newContact, (err, Contact) => {
         if(err){
             console.error(err);
             res.end(err);
@@ -45,7 +45,7 @@ export function DisplayContactsEditPage(req, res, next){
             res.end(err);
         }
 
-        res.render('index', { title: 'Edit Contact', page: 'contacts/edit', contact: contact, displayName: UserDisplayName(req) });
+        res.render('index', { title: 'Edit Contact', page: 'contacts/edit', contact: contact, displayName: UserDisplayName(req)});
     });    
 }
 
@@ -67,7 +67,7 @@ export function ProcessContactsEditPage(req, res, next){
             res.end(err);
         };
 
-        res.redirect('/contact-list')
+        res.redirect('/contact-list');
     } )
 }
 
