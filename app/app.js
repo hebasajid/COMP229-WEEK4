@@ -15,7 +15,6 @@ import passportLocal from 'passport-local';
 import flash from 'connect-flash';
 
 
-
 // Auth Step 2 - defien our auth strategy
 let localStrategy = passportLocal.Strategy;
 
